@@ -22,10 +22,10 @@
  - 하이퍼링크 설정
 
  ### 댓글
- - <form> 태그 사용
- - 힌트 : <input type="text">
- - 등록 : <button type="button"></button>
- - 취소 : <button type="reset"></button>
+ - form 태그 사용
+ - 힌트 : input type="text"
+ - 등록 : button type="button"></button
+ - 취소 : button type="reset"></button
 
  ## 프로그래밍 요구사항
 -  root 디렉터리에는 웹 문서만 저장할 수 있다.

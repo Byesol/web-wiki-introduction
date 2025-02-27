@@ -70,10 +70,20 @@ article {
 }
 
 div.thumbnail {
+
   display: flex;
   justify-content: center;
   margin-bottom: var(--page-paragraph-margin-y);
 }
+.thumbnail2 {
+  display: block;
+  justify-content: center;
+  max-width: 300px; 
+  height: auto; 
+  margin: 10px 0; 
+
+}
+
 
 section::after {
   content: "";
@@ -98,13 +108,11 @@ aside h2 {
 }
 
 .profile-image {
-  background-image: url("https://images.unsplash.com/photo-1618979251882-0b40ef3617f0?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: 100%;
-  background-position: center 100%;
-  width: var(--aside-width);
-  height: var(--aside-width);
-
-  text-indent: -1000rem;
+  display: block;
+  max-width: 100%;  
+  height: auto;  
+  border-radius: 10px;
+  margin-bottom: 20px; 
 }
 
 aside.right-sidebar nav {
@@ -151,4 +159,68 @@ footer p {
 
   --divider-color: #efefef;
   --font-default-color: #333;
+}
+
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 400px;
+}
+
+.square-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="button"] {
+  background-color: blue;
+  color: white;
+}
+
+button[type="reset"] {
+  background-color:red;
+  color: white;
+}
+
+.comment-list {
+  margin-top: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.comment-item {
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }

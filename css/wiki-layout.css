@@ -224,3 +224,11 @@ button[type="reset"] {
   margin-bottom: 10px;
   border-radius: 5px;
 }
+
+aside.right-sidebar nav ul li a,
+aside.right-sidebar nav ul li a:visited,
+aside.right-sidebar nav ul li a:hover,
+aside.right-sidebar nav ul li a:active {
+  color: black !important; 
+  text-decoration: none;
+}
